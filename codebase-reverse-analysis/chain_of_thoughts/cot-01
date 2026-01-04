@@ -1,0 +1,133 @@
+Perform an EXHAUSTIVE codebase analysis covering ALL aspects:
+
+1. **System Architecture**
+   - Logical layers (Presentation, Business, Data, Infrastructure) with diagram
+   - C4 system context diagram
+   - Component relationships
+   - Technology stack
+
+2. **Database Deep Dive**
+   - Complete ERD with ALL tables, columns, data types
+   - All constraints (PK, FK, UK, CHECK, DEFAULT, NOT NULL)
+   - All indexes (clustered, non-clustered, composite, fulltext)
+   - All triggers with their logic
+   - All stored procedures and views
+   - Normalization level analysis
+   - Table relationship cardinalities
+
+3. **Class & Entity Relationships**
+   - Complete UML class diagrams
+   - Inheritance hierarchies
+   - Composition and aggregation
+   - Entity relationship mappings
+   - DTOs and data models
+
+4. **UI Complete Inventory**
+   - List ALL screens/pages with purpose
+   - Screen navigation flow diagram
+   - Screen-to-API mapping for each screen
+   - User journey maps for main flows
+   - Component hierarchy per screen
+   - Form validations
+
+5. **End-to-End Flows (CRITICAL)**
+   - For EACH major business capability, trace:
+     - User action on screen
+     - API call details
+     - All layers touched (UI → Controller → Service → Repository → DB)
+     - Actual SQL queries executed
+     - Response path back to user
+     - All side effects (emails, events, logs)
+   - Document at least: Login, Create Order, Checkout, Search, CRUD operations
+
+6. **Business Domain**
+   - Domain glossary (ubiquitous language)
+   - Domain model with class diagram
+   - Business rules and invariants
+   - Workflows with state diagrams
+   - Bounded contexts
+
+7. **Code Conventions**
+   - Naming conventions (all levels)
+   - Code organization patterns
+   - Design patterns used
+
+Generate complete Mermaid diagrams for ALL visualizations.
+Save all documentation to appropriate wiki/ folders.
+
+Complete Chain of Prompts 
+Phase 1: Discovery & Domain Understanding
+
+✅ Comprehensive analysis (use prompt above) ← START HERE
+"Extract the complete domain glossary with all business terms"
+"Show me all bounded contexts and their relationships"
+"What are ALL the business rules enforced in this system?"
+
+Phase 2: Deep Domain Dive
+
+"Map the complete business workflow for [specific process like 'order fulfillment']"
+"Show the domain model for [specific bounded context]"
+"What domain events are triggered and where?"
+"Document all business calculations and formulas"
+
+Phase 3: Technical Analysis
+
+"What design patterns are used and where?"
+"Trace this function: [specific function]"
+"Show API flow for [endpoint]"
+"Document all naming conventions"
+
+Phase 4: Quality & Risk Assessment
+
+"Security review of [component]"
+"Performance review of [module]"
+"What are the anti-patterns and technical debt?"
+"Where is business logic leaked outside domain layer?"
+
+Phase 5: Planning & Improvement
+
+"Suggest refactoring to align with Domain-Driven Design"
+"How can I improve separation of concerns?"
+"What's missing from the domain model?"
+
+Alternative Domain-Focused First Prompts
+For Business Analyst Role:
+I need to understand the business domain. Provide:
+1. Complete domain glossary (ubiquitous language)
+2. All business entities and their relationships (Mermaid ERD)
+3. Business rules and validation constraints
+4. Business workflows with state diagrams
+5. Key business calculations and formulas
+6. Domain events and their triggers
+
+For New Developer Onboarding:
+I'm joining this project. Help me understand:
+1. What business problem does this solve?
+2. What are the core domain concepts? (glossary)
+3. How is the code organized? (conventions)
+4. What are the 5 most important files to read?
+5. What design patterns should I know?
+6. Domain model with Mermaid class diagram
+7. Main business workflows
+
+For Domain-Driven Design Assessment::
+Analyze this codebase from a DDD perspective:
+1. Identify bounded contexts and their boundaries
+2. Extract the domain model (entities, value objects, aggregates)
+3. Map domain events and their handlers
+4. Evaluate: Is business logic in the domain layer or leaked elsewhere?
+5. Identify ubiquitous language used vs. technical jargon
+6. Document business invariants and rules
+7. Show aggregate relationships with Mermaid diagrams
+8. Suggest DDD improvements
+
+For Legacy System Documentation:
+This codebase has no documentation. Create comprehensive docs:
+1. Business domain glossary (all terms defined)
+2. Domain model with entity relationships
+3. All business rules and where they're enforced
+4. Business workflows (Mermaid state diagrams)
+5. Naming conventions observed
+6. Design patterns used
+7. Code organization structure
+8. Architecture overview
