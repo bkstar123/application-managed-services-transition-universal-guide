@@ -55,43 +55,43 @@ Perform an EXHAUSTIVE codebase analysis covering ALL aspects:
 Generate complete Mermaid diagrams for ALL visualizations.
 Save all documentation to appropriate wiki/ folders.
 
-Complete Chain of Prompts 
-Phase 1: Discovery & Domain Understanding
+**Complete Chain of Prompts**
+- Phase 1: Discovery & Domain Understanding
 
 ✅ Comprehensive analysis (use prompt above) ← START HERE
 "Extract the complete domain glossary with all business terms"
 "Show me all bounded contexts and their relationships"
 "What are ALL the business rules enforced in this system?"
 
-Phase 2: Deep Domain Dive
+- Phase 2: Deep Domain Dive
 
 "Map the complete business workflow for [specific process like 'order fulfillment']"
 "Show the domain model for [specific bounded context]"
 "What domain events are triggered and where?"
 "Document all business calculations and formulas"
 
-Phase 3: Technical Analysis
+- Phase 3: Technical Analysis
 
 "What design patterns are used and where?"
 "Trace this function: [specific function]"
 "Show API flow for [endpoint]"
 "Document all naming conventions"
 
-Phase 4: Quality & Risk Assessment
+- Phase 4: Quality & Risk Assessment
 
 "Security review of [component]"
 "Performance review of [module]"
 "What are the anti-patterns and technical debt?"
 "Where is business logic leaked outside domain layer?"
 
-Phase 5: Planning & Improvement
+- Phase 5: Planning & Improvement
 
 "Suggest refactoring to align with Domain-Driven Design"
 "How can I improve separation of concerns?"
 "What's missing from the domain model?"
 
-Alternative Domain-Focused First Prompts
-For Business Analyst Role:
+**Alternative Domain-Focused First Prompts**. 
+***For Business Analyst Role:***
 I need to understand the business domain. Provide:
 1. Complete domain glossary (ubiquitous language)
 2. All business entities and their relationships (Mermaid ERD)
@@ -100,7 +100,7 @@ I need to understand the business domain. Provide:
 5. Key business calculations and formulas
 6. Domain events and their triggers
 
-For New Developer Onboarding:
+***For New Developer Onboarding:***
 I'm joining this project. Help me understand:
 1. What business problem does this solve?
 2. What are the core domain concepts? (glossary)
@@ -110,7 +110,7 @@ I'm joining this project. Help me understand:
 6. Domain model with Mermaid class diagram
 7. Main business workflows
 
-For Domain-Driven Design Assessment::
+***For Domain-Driven Design Assessment:***
 Analyze this codebase from a DDD perspective:
 1. Identify bounded contexts and their boundaries
 2. Extract the domain model (entities, value objects, aggregates)
@@ -121,7 +121,7 @@ Analyze this codebase from a DDD perspective:
 7. Show aggregate relationships with Mermaid diagrams
 8. Suggest DDD improvements
 
-For Legacy System Documentation:
+***For Legacy System Documentation:***
 This codebase has no documentation. Create comprehensive docs:
 1. Business domain glossary (all terms defined)
 2. Domain model with entity relationships
